@@ -1,16 +1,18 @@
 package com.demo;
 
-import com.pojo.Person;
+import com.utility.Calc;
 
 public class PolymorphismDemo {
 
 
     public static void main(String[] args) {
-        Person john = new Person(1, "John", 35, "Delhi", "male");
-        Person dessy = new Person(2, "Dessy", 20, "Pune", "female");
 
-        john.play();
-        dessy.study();
+        Calc calc = new Calc();
+
+        calc.add(5,6);
+        calc.add(2,3,5);
+        calc.add("Compile Time"," Polymorphism");
+
     }
 
 }
